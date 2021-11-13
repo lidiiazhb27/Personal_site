@@ -16,102 +16,154 @@
     <a href="fourth.html">Завдання 2</a> <br>
     <a href="contacts.html">Контакти</a> <br>
     <hr size="15" color="lightblue">
-    <table border="3" cellpadding="5" cellspacing="10">
+    <!-- Сторінка за макетом -->
+    <!-- Створюю таблицю за допомогою елементів table, tr, td -->
+    <table width="100%" height="100%" cellpadding="5" cellspacing="10">
+        <!-- Атрибут cellpadding визначає відстань між кордоном клітинки і її вмістом.
+        Атрибут cellspacing задає відстань між зовнішніми кордонами клітинки. -->
+
         <tr>
-            <td><img src="images/Котики.jpg" height="150px" width="120px" alt=""></td>
-            <td>Фотографія котиків</td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <center>Мілка★</center>
+            <!-- У першому рядку макета повинні бути дві комірки, у першій - фото, у другій текст, 
+                тому створюю за допомогою tr - td дві комірки -->
+            <td height="150px" width="120px"><img src="images/Котики.jpg" height="150px" width="120px" alt=""></td>
+            <!-- У td  поміщаю елемент img, за допомогою атрибутів width, height налаштовую розміри -->
+            <td>
+                <center> Фотографія котиків <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                    eos sint
+                    adipisci repellat quos sapiente quod similique odit quae voluptates enim, explicabo placeat in
+                    maiores,
+                    corrupti tenetur debitis eaque suscipit? Voluptas deserunt quia molestiae sit ea voluptatum laborum
+                    veritatis, unde sunt incidunt quos alias, sapiente inventore saepe repellendus iste impedit, placeat
+                    atque repudiandae exercitationem earum at pariatur? Iure deleniti voluptates, incidunt aperiam
+                    quibusdam
+                    laborum magni, qui eum vero asperiores facilis similique nesciunt repellendus rerum. Fugiat suscipit
+                    accusamus, nihil unde voluptates dolorem eaque voluptatibus? Natus quam sint sequi fuga sit.
+                    Pariatur
+                    molestias sunt magni nostrum provident doloremque cum, laboriosam impedit iure ipsam, assumenda
+                    eveniet
+                    ipsa obcaecati qui laborum rerum dolore suscipit corrupti dignissimos aperiam quidem quibusdam hic
+                    iste
+                    doloribus. Ducimus eius necessitatibus maiores asperiores non possimus odit et voluptatibus officiis
+                    perferendis aut eaque a laboriosam omnis at, doloribus voluptates sequi consequatur sunt commodi
+                    distinctio. Quisquam culpa minima excepturi ab? Rerum, animi.</center>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <center>Моцарт</center>
+                <!-- За умовою макету необхідно було у другому рядку об'єднати два стовпчики. Для цього я скористалась атрибутом colspan="2"
+            Цей атрибут вказує, на скільки стовпців розширюється клітинка, за замовчуванням значення дорівнює 1. -->
+                <center>
+                    <!-- Далі, у другому рядку макету я помістила у комірку таблицю із навичками своєї собаки -->
+                    <table cellpadding="5" rules="cols">
+                        <!-- Атрибут rules повідомляє браузеру, де відображати межі між клітинками. -->
+                        <!-- Приклад використання тегів і атрибутів для таблиці: -->
+                        <tr>
+                            <td colspan="4"><strong>Команди, які вміє виконувати моя собака Кейсі:</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Сидіти:</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                            <td>Давати лапку:</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Голос:</td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>Рядом:</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Лежати на спині:</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                            <td>Фас:</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Місце:</td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>Стояти:</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>На ручки:</td>
+                            <td>⭐⭐</td>
+                            <td>Лежати:</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Апорт:</td>
+                            <td>⭐⭐</td>
+                            <td>Гуляти:</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                    </table>
+                </center>
             </td>
         </tr>
         <tr>
-            <td>Content1</td>
-            <td>Content2</td>
-        </tr>
-    </table>
-    <hr>
-    <table border="0" cellpadding="5" rules="cols">
-        <tr>
-            <th scope="col" colspan="4"><strong>Приклад використання тегів і атрибутів для таблиці:</strong></th>
-        </tr>
-        <tr>
-            <td colspan="4"><strong>Команди, які вміє виконувати Кейсі:</strong></td>
-        </tr>
-        <tr>
-            <td>Сидіти:</td>
-            <td>⭐⭐⭐⭐⭐</td>
-            <td>Давати лапку:</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Голос:</td>
-            <td>⭐⭐⭐⭐</td>
-            <td>Рядом:</td>
-            <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Лежати на спині:</td>
-            <td>⭐⭐⭐⭐⭐</td>
-            <td>Фас:</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Місце:</td>
-            <td>⭐⭐⭐⭐</td>
-            <td>Стояти:</td>
-            <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>На ручки:</td>
-            <td>⭐⭐</td>
-            <td>Лежати:</td>
-            <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Апорт:</td>
-            <td>⭐⭐</td>
-            <td>Гуляти:</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-    </table>
-    <hr>
-    <table border="1" cellpadding="10" cellspacing="10">
-        <tr>
-            <th scope="col" colspan="2"><strong>Пояснення деяких атрибутів таблиці:</strong></th>
-        </tr>
-        <tr>
-            <td>cellpadding:</td>
-            <td>Визначає відстань між кордоном клітинки і її вмістом.</td>
-        </tr>
-        <tr>
-            <td>border:</td>
-            <td>Встановлює товщину кордону в пікселях навколо таблиці.</td>
-        </tr>
-        <tr>
-            <td>cellspacing:</td>
-            <td>Задає відстань між зовнішніми кордонами клітинки.</td>
-        </tr>
-        <tr>
-            <td>cols:</td>
-            <td>Атрибут cols вказує кількість стовпців в таблиці, допомагаючи браузеру в підготовці до її відображенню.
+            <td colspan="2">
+                <center>
+                    <!-- У третьому рядку я помістила в елементи tr - td наступну таблицю де продовжила практикуватись із створенням таблиці
+                        та додатково проексперементувала з відступами між комірками, та відступами у середині комірок створених таблиць. -->
+                    <table border="1" cellpadding="10" cellspacing="10">
+                        <!-- Атрибут border встановлює товщину кордону в пікселях навколо таблиці. -->
+                        <tr>
+                            <th scope="col" colspan="2"><strong>Пояснення деяких атрибутів таблиці:</strong></th>
+                            <!-- Елемент <th> визначає комірку як заголовок групи комірок таблиці.
+                                 Точний характер цієї групи визначається атрибутами області видимості та заголовків.
+                            Атрибут scope визначає клітинки, до яких відноситься елемент 
+                            заголовка (визначений у <th>). Він може мати такі значення:
+                            row: заголовок відноситься до всіх клітинок рядка, до якого він належить.
+                            col: заголовок відноситься до всіх клітинок стовпця, до якого він належить.
+                            rowgroup: заголовок належить до групи рядків і відноситься до всіх її клітинок. Ці клітинки можуть бути розміщені 
+                            праворуч або ліворуч від заголовка, залежно від значення атрибута dir в елементі <table>.
+                            colgroup: заголовок належить до colgroup і відноситься до всіх її комірок.
+                            Якщо атрибут scope не вказано або його значення не є row, col, rowgroup чи colgroup, 
+                            тоді браузери автоматично вибирають набір комірок, до яких застосовується клітинка заголовка. -->
+                        </tr>
+                        <tr>
+                            <td>cellpadding:</td>
+                            <td>Визначає відстань між кордоном клітинки і її вмістом.</td>
+                        </tr>
+                        <tr>
+                            <td>border:</td>
+                            <td>Встановлює товщину кордону в пікселях навколо таблиці.</td>
+                        </tr>
+                        <tr>
+                            <td>cellspacing:</td>
+                            <td>Задає відстань між зовнішніми кордонами клітинки.</td>
+                        </tr>
+                        <tr>
+                            <td>cols:</td>
+                            <td>Атрибут cols вказує кількість стовпців в таблиці, допомагаючи браузеру в підготовці до
+                                її відображенню.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>rules:</td>
+                            <td>Повідомляє браузеру, де відображати межі між клітинками.</td>
+                        </tr>
+                        <tr>
+                            <td>width:</td>
+                            <td>Задає ширину таблиці.</td>
+                        </tr>
+                    </table>
+                </center>
             </td>
         </tr>
+    </table>
+    <!-- У четвертому рядку я створила нову таблицю із двома однаковими комірками -->
+    <table width="100%" height="100%" border="0" cellpadding="5" cellspacing="10">
         <tr>
-            <td>rules:</td>
-            <td>Повідомляє браузеру, де відображати межі між клітинками.</td>
-        </tr>
-        <tr>
-            <td>width:</td>
-            <td>Задає ширину таблиці.</td>
+            <td width="50%">
+                <center> Сайт створила Жбадинська Лідія Русланівна</center>
+            </td>
+            <td>
+                <center>Студентка 242-БІ групи, ФККПІ</center>
+            </td>
         </tr>
     </table>
+
 </body>
 
 </html>
