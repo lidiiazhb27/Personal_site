@@ -47,7 +47,7 @@ thead {
 /* Виконую 4 завдання -> додаю стилі за допомогою тегів, id, певдокласів і тд: */
 /* За допомогою тегів: */
 body {
-    background-image: url("./istock.jpg");
+    background-image: url("../images/istock.jpg");
     /* додала фото на задній фон */
     background-repeat: repeat-y;
     /* застосувала повторення фотографії на задньому фоні по осі у */
