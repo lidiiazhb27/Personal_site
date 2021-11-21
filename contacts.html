@@ -6,27 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакти</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        hr {
+            border-style: none;
+            border-top: aqua dotted 10px;
+            /* задала колір, стиль та ширину верхньої межі лінії за допомогою border-top */
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <hr size="15" color="lightblue">
-    <a href="index.html">Я</a> <br>
-    <a href="second.html">Кейсі</a> <br>
-    <a href="third.html">Котики</a> <br>
-    <a href="fourth.html">Завдання 2</a> <br>
-    <a href="contacts.html">Контакти</a> <br>
-    <hr size="15" color="lightblue">
-
+    <hr style="border-color: darkcyan;" size="15">
+    <!-- змінила колір та розмір лінії -->
+    <a class="links" href="index.html">Я</a> <br>
+    <a class="links" href="second.html">Кейсі</a> <br>
+    <a class="links" href="third.html">Котики</a> <br>
+    <a class="links" href="fourth.html">Завдання 2</a> <br>
+    <a class="links" style="color: crimson; font-size: 28px;" href="second.html" href="contacts.html">Контакти</a> <br>
+    <!-- за допомогою inline CSS задала стилю, а саме: змінила колір та розмір тексту у тезі <a> -->
+    <hr size="15">
+    <center>
+        <h4 style="color: hotpink;" id="id_color" class="chanding_color">Форма надсилання листів</h4>
+    </center>
     <form action="mailto:lidysia27@gmail.com" method="POST" enctype="text/plain">
-        <!-- За допомогою HTML-елемента створила форму -->
-        <label for="">Your name:</label>
-        <input type="text" name="My name is"><br>
-        <label for="">Your email:</label>
-        <input type="email" name="My email is"><br>
-        <label for="">Your message:</label><br>
-        <textarea name="My message:" id="textarea1" cols="30" rows="10"></textarea>
-        <input type="submit">
+        <label style="font-size: 20px;" for="">Your name:</label>
+        <!-- змінила розмір тексту в label -->
+        <label for="">
+            <input style="border-radius: 20px;" type="text" name="My name is"><br>
+            <!-- заокруглила межі текстового полю за допомогою border-radius -->
+        </label>
+        <label style="font-size: 20px;" for="">Your email:</label>
+        <!-- змінила розмір тексту в label -->
+        <label for="">
+            <input style="border-radius: 20px;" type="email" name="My email is"><br>
+            <!-- заокруглила межі полю типу email за допомогою border-radius -->
+        </label>
+        <label style="font-size: 20px;" for="">Your message:</label><br>
+        <!-- змінила розмір тексту в label -->
+        <label for="">
+            <textarea style="border-radius: 20px;" name="My message:" id="textarea1" cols="30" rows="10"
+                placeholder="  Text here.."></textarea>
+            <!-- заокруглила межі текстового полю за допомогою border-radius -->
+            <br>
+        </label>
+        <label for="">
+            <input
+                style="color: inherit; background-color: lightgoldenrodyellow; width: 82px; padding-left: 5px; height: 25px; margin-left: 75px;"
+                type="submit">
+        </label>
+
+        <!-- змінила колір тексту, колір заднього фону кнопки, висоту та відступ перед кнопкою -->
+        <!-- також додала ширину і педдінг, тому що іnline css має найвищий пріоритет і стилі, 
+                які я задала до input елементів у css файлі не змінять вигляд кнопки -->
     </form>
+    <hr style="border-color: darkcyan;" size="15">
+    <!-- змінила колір та розмір лінії -->
 </body>
 
 </html>
