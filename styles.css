@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(224, 255, 242);
+    /* задаю задній фон усій сторінці */
+    /* зауважу, що фон поміняється на всіх сторінках сайту, окрім першої, оскільки external CSS має найнижчий пріорітет */
+}
+
+img {
+    border-radius: 20px;
+    /* змінила радіус меж фотографій, тобто заокруглила їх */
+}
+
+a {
+    text-decoration: none;
+    /* прибрала нижнє підкреслювання тексту, що встановлений за замовчуванням */
+    color: darkorchid;
+    /* задала колір тексту силки */
+    font-size: 16px;
+    /* змінила розмір тексту */
+}
+
+h1 {
+    background-color: lightcyan;
+    /* задала колір заднього фону заголовку */
+    color: cornflowerblue;
+    /* задала колір тексту */
+}
+
+p {
+    color: darkcyan;
+    /* задала колір тексту */
+    font-size: 18px;
+    /* змінила розмір тексту */
+}
+
+h2, h3 {
+    color: rgb(0, 49, 139);
+    /* задала колір тексту */
+}
+
+thead {
+    background-color: #333;
+    /* задала колір заднього фону заголовку таблиці */
+    color: #fff;
+    /* задала колір тексту */
+}
+
+/* Виконую 4 завдання -> додаю стилі за допомогою тегів, id, певдокласів і тд: */
+/* За допомогою тегів: */
+body {
+    background-image: url("../images/istock.jpg");
+    /* додала фото на задній фон */
+    background-repeat: repeat-y;
+    /* застосувала повторення фотографії на задньому фоні по осі у */
+    background-size: 100%;
+    /* задала розмір фотографії заднього фону */
+}
+
+input, textarea {
+    border-color: hotpink;
+    /* змінила колір меж */
+    padding-left: 10px;
+    /* задала внутрішній відступ вліво */
+}
+
+/* За допомогою класів: */
+.links {
+    background-color: aliceblue;
+    /* задала кольору заднього фону елементу */
+    border-radius: 10px;
+    /* зробила заокруглення */
+    line-height: normal;
+    /* задала висоту лінії рядка */
+    font-variant: small-caps slashed-zero;
+    /* вигляд стилю шрифту  */
+    font-family: 'Courier New', Courier, monospace;
+    /* змінила шрифт */
+}
+
+/* За допомогою ID: */
+#italic {
+    font-style: italic;
+    /* задала стиль тексту */
+    background: linear-gradient(to right, #ae90ff, #bda4ff, #ead4ff, #bda4ff, #ae90ff);
+    /* зробила градієнт заднього фону елемента */
+}
+
+/* За допомогою псевдокласу */
+/* псевдоклас ховер змінює елементи при наведені мишки на них */
+/* я змінила input, label елементи так, що при наведені на них будуть зміниватись колір меж, розмір у ширину та колір тексту */
+input:hover {
+    border-color: greenyellow;
+    /* задала колір меж */
+    width: 250px;
+    /* збільшила ширину */
+}
+
+label:hover {
+    color: red;
+}
+
+/* Specificity  */
+
+h4 {
+    color: coral;
+}
+
+center h4{
+    color: cornflowerblue;
+}
+
+.chanding_color {
+    color: aqua;
+}
+
+#id_color {
+    color: blueviolet;
+}
