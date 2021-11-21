@@ -6,16 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Персональна сторінка котиків</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        hr {
+            border-style: none;
+            border-top: aqua dotted 10px;
+            /* задала колір, стиль та ширину верхньої межі лінії за допомогою border-top */
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <hr size="15" color="lightblue">
-    <a href="index.html">Я</a> <br>
-    <a href="second.html">Кейсі</a> <br>
-    <a href="third.html">Котики</a> <br>
-    <a href="fourth.html">Завдання 2</a> <br>
-    <a href="contacts.html">Контакти</a> <br>
-    <hr size="15" color="lightblue">
+    <hr style="border-color: darkcyan;" size="15">
+    <!-- змінила колір та розмір лінії -->
+    <a class="links" href="index.html">Я</a> <br>
+    <a class="links" href="second.html">Кейсі</a> <br>
+    <a class="links" style="color: crimson; font-size: 28px;" href="second.html" href="third.html">Котики</a> <br>
+    <!-- за допомогою inline CSS задала стилю, а саме: змінила колір та розмір тексту у тезі <a> -->
+    <a class="links" href="fourth.html">Завдання 2</a> <br>
+    <a class="links" href="contacts.html">Контакти</a> <br>
+    <hr size="15">
     <center>
         <h1>Персональна сторінка</h1>
         <img width="150px" height="250px" src="images/Мілка.jpg" alt="">
@@ -39,7 +50,8 @@
     <h3>Цікаві факти:</h3>
     <p>Дитина Мілки; <br> пів року звертались як до хлопчика, а потім Моцарт народила і ми
         зрозуміли, що це дівчинка☺</p>
-    <hr size="15" color="lightblue">
+    <hr style="border-color: darkcyan;" size="15">
+    <!-- змінила колір та розмір лінії -->
 </body>
 
 </html>
