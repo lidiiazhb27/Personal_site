@@ -6,71 +6,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Персональна сторінка Лідії</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* стилізую тіло (body) сайту */
+        body {
+            background-color: lightyellow;
+            /* задаю задній фон усій сторінці */
+        }
+
+        /* стилізую горизонтальну лінію */
+        hr {
+            border-style: none;
+            /* скидаю всі стилі border */
+            border-color: aqua;
+            /* задаю колір */
+            border-top-style: dotted;
+            /* змінюю стиль верхньої межі */
+            border-width: 10px;
+            /* задаю ширину меж(border)  */
+            width: 100%;
+            /* задаю довжину лінії <hr> */
+            height: 15px;
+            /* задаю висоту лінії <hr> */
+        }
+
+        /* стилізую заголовок типу h1 */
+        h1 {
+            background-color: lightcyan;
+            /* задаю задній фон елементу h1 */
+            color: cornflowerblue;
+            /* задаю колір тексту */
+        }
+
+        /* стилізую елемент p */
+        p {
+            color: darkcyan;
+            /* задаю колір тексту */
+            font-size: 18px;
+            /* задаю розмір тексту */
+        }
+
+        /* стилізую заголовоки типу h2, h3 */
+        h2,
+        h3 {
+            color: rgb(0, 49, 139);
+            /* задаю колір тексту */
+        }
+
+        /* стилізую HTML-елемент <li> */
+        li {
+            color: darkcyan;
+            font-size: 18px;
+            margin-left: 100px;
+            /* змістила елемент на 100 пікселів вправо */
+        }
+    </style>
 </head>
 
 <body>
-    <hr size="15" color="lightblue">
-
-        <a href="first.html">Я</a> <br>
-        <a href="second.html">Кейсі</a> <br>
-        <a href="third.html">Котики</a> <br>
-        <a href="fourth.html">Завдання 2</a> <br>
-        <a href="contacts.html">Контакти</a> <br>
-        <hr size="15" color="lightblue">
-        <center>
-            <h1>Персональна сторінка</h1>
-        </center>
-        <div style="display: block;">
-            <img width="200px" height="270px" src="images/My_photo.jpg" alt="">
-            <h2>Прізвище, ім'я, по-батькові:</h2>
-            <p>Жбадинська Лідія Русланівна</p>
-            <h2>Вік:</h2>
-            <p>18 років</p>
-            <h2>Контактна інформація:</h2>
-            <h3>Email:</h3>
-            <p>6887952@stud.nau.edu.ua</p>
-            <h3>Номер телефону:</h3>
-            <p>+38098*****77</p>
-            <h2>Освіта:</h2>
-            <p> <strong>Університет: </strong>Національний авіаційний університет <br> <strong>Спеціальність:
-            </strong>125
-                Кібербезпека
-                <br> <strong>Освітня програма: </strong> БІКС <br> <strong>Курс: </strong>2 (бакалавр)
-            </p>
-            <h2>Чим займаюся:</h2>
-            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse modi quibusdam
-                iusto
-                minima. Nisi ad illo id
-                ratione laudantium eos accusantium totam, suscipit voluptatem, mollitia eligendi eum vero ipsum fuga
-                odit natus,
-                tenetur maiores veritatis aut vel cum in. Non facilis consequatur officiis facere saepe et quasi rem
-                sint odio
-                voluptates omnis laborum quisquam dolorem nemo impedit, at aut doloremque veniam quidem, amet animi
-                veritatis
-                nihil. Voluptatibus nesciunt ex quasi! Nostrum, reiciendis voluptatibus. <br> Neque, nemo. At quisquam
-                repudiandae et
-                cupiditate enim quo consectetur hic minima ipsa pariatur aliquam unde ut possimus perferendis officiis
-                inventore
-                sunt, quod corporis culpa iste! Labore recusandae fugit eligendi soluta exercitationem libero
-                praesentium nulla
-                natus, quia laborum facilis sapiente perspiciatis illo nisi doloremque quisquam accusamus qui maxime hic
-                commodi
-                ea. Praesentium illum quam eaque ullam omnis autem perferendis cupiditate molestiae doloremque totam,
-                nemo
-                repellat quisquam deleniti recusandae, amet sequi. Eligendi, sit? Quo nostrum quaerat hic dicta?</p>
-            <h3>Улюблені книги:</h3>
-            <ol>
-                <li>"Про море мені розкажи" Ельчін Сафарлі</li>
-                <li>"Трансерфінг реальності" Вадим Зеланд</li>
-                <li>"Фірма" Джон Ґрішем</li>
-                <li>"П’ять четвертинок апельсина" Джоан Гаррис</li>
-            </ol>
-            <h3>Домашні улюбленці:</h3>
-            <ul>
-                <li>Собака</li>
-                <li>Котики</li>
-            </ul>
-            <hr size="15" color="lightblue">
+    <hr style="border-color: darkcyan;">
+    <!-- змінила колір лінії, не зважаючи, що уже задала колір у head сайту. 
+        Колір все одно змінився, тому що inline CSS має вищий пріорітет, ніж Internal CSS -->
+    <a class="links" style="color: crimson; font-size: 28px;" href="index.html">Я</a> <br>
+    <!-- за допомогою inline CSS задала стилю, а саме: змінила колір та розмір тексту у тезі <a> -->
+    <a class="links" href="second.html">Кейсі</a> <br>
+    <a class="links" href="third.html">Котики</a> <br>
+    <a class="links" href="fourth.html">Завдання 2</a> <br>
+    <a class="links" href="contacts.html">Контакти</a> <br>
+    <hr>
+    <center>
+        <h1 id="italic">Персональна сторінка</h1>
+    </center>
+    <img width="200px" height="270px" src="images/My_photo.jpg" alt="">
+    <h2>Прізвище, ім'я, по-батькові:</h2>
+    <p>Жбадинська Лідія Русланівна</p>
+    <h2>Вік:</h2>
+    <p>18 років</p>
+    <h2>Контактна інформація:</h2>
+    <h3>Email:</h3>
+    <p>6887952@stud.nau.edu.ua</p>
+    <h3>Номер телефону:</h3>
+    <p>+38098*****77</p>
+    <h2>Освіта:</h2>
+    <p> <strong>Університет: </strong>Національний авіаційний університет <br> <strong>Спеціальність:
+        </strong>125
+        Кібербезпека
+        <br> <strong>Освітня програма: </strong> БІКС <br> <strong>Курс: </strong>2 (бакалавр)
+    </p>
+    <h2>Чим займаюся:</h2>
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse modi quibusdam
+        iusto
+        minima. Nisi ad illo id
+        ratione laudantium eos accusantium totam, suscipit voluptatem, mollitia eligendi eum vero ipsum fuga
+        odit natus,
+        tenetur maiores veritatis aut vel cum in. Non facilis consequatur officiis facere saepe et quasi rem
+        sint odio
+        voluptates omnis laborum quisquam dolorem nemo impedit, at aut doloremque veniam quidem, amet animi
+        veritatis
+        nihil. Voluptatibus nesciunt ex quasi! Nostrum, reiciendis voluptatibus. <br> Neque, nemo. At quisquam
+        repudiandae et
+        cupiditate enim quo consectetur hic minima ipsa pariatur aliquam unde ut possimus perferendis officiis
+        inventore
+        sunt, quod corporis culpa iste! Labore recusandae fugit eligendi soluta exercitationem libero
+        praesentium nulla
+        natus, quia laborum facilis sapiente perspiciatis illo nisi doloremque quisquam accusamus qui maxime hic
+        commodi
+        ea. Praesentium illum quam eaque ullam omnis autem perferendis cupiditate molestiae doloremque totam,
+        nemo
+        repellat quisquam deleniti recusandae, amet sequi. Eligendi, sit? Quo nostrum quaerat hic dicta?</p>
+    <h3>Улюблені книги:</h3>
+    <ol>
+        <li>"Про море мені розкажи" Ельчін Сафарлі</li>
+        <li>"Трансерфінг реальності" Вадим Зеланд</li>
+        <li>"Фірма" Джон Ґрішем</li>
+        <li>"П’ять четвертинок апельсина" Джоан Гаррис</li>
+    </ol>
+    <h3>Домашні улюбленці:</h3>
+    <ul style="list-style-type: '♥ ';">
+        <!-- list-style-type змінює стиль маркування списку -->
+        <li>Собака</li>
+        <li>Котики</li>
+    </ul>
+    <hr style="border-color: darkcyan;">
+    <!-- також змінила колір лінії -->
 </body>
 
 </html>
