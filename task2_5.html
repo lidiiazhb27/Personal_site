@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 2.5.</title>
+    <style>
+        .size-box {
+            display: inline-block;
+            /* розміщую елементи div в один ряд(inline) та зробила їх блочними(block)*/
+            width: 100px;
+            height: 150px;
+            /* задала розміри */
+            background-color: #eeeff2;
+            /* задній фон */
+            border-left: 10px #D0D0FF dotted;
+            /* зробила ліву границю */
+            margin-left: 10px;
+            padding: 10px;
+            /* задала відступи */
+            font-size: 40px;
+            /* розмір тексту */
+        }
+
+        .size-box:hover {
+            background-color: yellow;
+            color: goldenrod;
+            cursor: pointer;
+        }
+
+        /* ховер ефект для задного фону та кольру тексту
+        курсор змінила на руку */
+
+        .six {
+            width: 100px;
+            height: 150px;
+            background-color: #eeeff2;
+            border-left: 10px #D0D0FF dashed;
+            margin-left: 10px;
+            padding: 10px;
+            font-size: 40px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        /* задала ті ж самі стилі вигляду боксу, що й для попередніх, тільки замісти display задала
+        фіксоване позиціонування згідно прикладу */
+
+        .six:hover {
+            background-color: yellow;
+            color: goldenrod;
+            cursor: pointer;
+        }
+
+        /* ховер ефект для задного фону та кольру тексту
+        курсор змінила на руку */
+
+        .main-box {
+            width: 800px;
+        }
+
+        /* задала розмір блоку, де будуть розміщуватись 5 дочірніх блоків,
+        щоб вони не спадали при зміні розміру сторінки */
+    </style>
+</head>
+
+<body>
+    <hr>
+    <a href="index.html">Я</a> <br>
+    <a href="second.html">Кейсі</a> <br>
+    <a href="third.html">Котики</a> <br>
+    <a href="fourth.html">Завдання 2</a> <br>
+    <a href="contacts.html">Контакти</a> <br>
+    <a href="task2.html">Завдання 2.1.</a>
+    <a href="task2_2.html">Завдання 2.2.</a>
+    <a href="task2_3.html">Завдання 2.3.</a>
+    <a href="task2_4.html">Завдання 2.4.</a>
+    <a style="color: crimson; font-size: 28px;" href="task2_5.html">Завдання 2.5.</a>
+    <hr>
+</body>
+<div class="main-box">
+    <div class="size-box">A</div>
+    <div class="size-box">B</div>
+    <div class="size-box">C</div>
+    <div class="size-box">D</div>
+    <div class="size-box">E</div>
+</div>
+<div class="six">F</div>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <style>
+        body {
+            margin: 0px;
+            height: 100%;
+        }
+
+        /* видалила відступи, що встановленні за замовчуванням, задала висоту сторінки на 100%, 
+        щоб правильно спрацював паралакс ефект*/
+
+        html {
+            height: 100%;
+        }
+
+        /* висота html-елементів */
+
+        .parallax {
+
+            background-image: url('images/parallax.jpg');
+            /* фото, що буде на задньому фоні */
+            height: 100%;
+            background-attachment: fixed;
+            /* фіксую фото */
+            background-position: center;
+            /* розміщую по центрі */
+            background-repeat: no-repeat;
+            /* вимикаю дублювання фото-фону */
+            background-size: cover;
+            /* задаю розмір */
+        }
+        .parallax-2 {
+
+            background-image: url('images/parallax-2.jpg');
+            /* фото, що буде на задньому фоні */
+            height: 100%;
+            background-attachment: fixed;
+            /* фіксую фото */
+            background-position: center;
+            /* розміщую по центрі */
+            background-repeat: no-repeat;
+            /* вимикаю дублювання фото-фону */
+            background-size: cover;
+            /* задаю розмір */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parallax"></div>
+    <!-- сторінка із заднім фото-фоном без жодних елементів -->
+
+    <p> Паралаксна прокрутка — це чудовий спосіб додати глибини вашому веб-сайту — і створити незабутній досвід
+        користувача. </p>
+        <!-- елемент, який прогортується -->
+
+    <div class="parallax-2"></div>
+    <!-- наступна сторінка із заднім фото-фоном без жодних елементів для ефекту, що елемент 'прогортали'-->
+</body>
+
+</html>

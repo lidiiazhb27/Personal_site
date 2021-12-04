@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive flex</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        /* видалила зовнішні відступи */
+
+        .background-image {
+            width: 100%;
+            box-sizing: border-box;
+            height: 600.3px;
+            background-image: url(images/mountains1.jpg);
+            /* фото на задній фон */
+            background-size: cover;
+            /* розмір фото */
+            background-repeat: no-repeat;
+            /* без дублювання */
+            background-position: center;
+            /* по центрі */
+            padding: 10px;
+            color: white;
+        }
+
+        /* додала фото на задній фон */
+
+        nav {
+            display: flex;
+            height: 50px;
+            justify-content: space-between;
+            /* розміщення елементів з однаковою відстанню між ними */
+        }
+
+        .style-travel {
+            font-size: 50px;
+        }
+
+
+        .child {
+            display: flex;
+            width: 800px;
+            justify-content: space-around;
+            /* розміщення елементів з однаковою відстанню навколо елементів */
+            font-size: 20px;
+        }
+
+        .border-take {
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 20px;
+            margin: 10px 0px;
+        }
+
+        .center-text {
+            margin-top: 200px;
+        }
+
+        .text-1 {
+            font-size: 20px;
+            font-family: cursive;
+        }
+
+        .text-2 {
+            font-size: 40px;
+            letter-spacing: 2px;
+            /* простір між буквами у слові */
+            font-family: sans-serif;
+        }
+
+        .text-3 {
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-family: sans-serif;
+            background-color: turquoise;
+            width: 120px;
+            height: 24px;
+            border-radius: 20px;
+            /* округоення */
+            line-height: 24px;
+            /* висота місця для тексту */
+            text-align: center;
+        }
+
+        .margin {
+            margin-bottom: 15px;
+        }
+
+        section {
+            width: 80%;
+            margin-bottom: 100px;
+        }
+
+        .section-experience {
+            width: 500px;
+            margin: 40px 0 100px 0;
+        }
+
+        .header-experience {
+            font-size: 24px;
+        }
+
+        img {
+            width: 330px;
+        }
+
+        .column {
+            width: 700px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .width-div {
+            width: 330px;
+        }
+
+        .header-column {
+            color: teal;
+            font-family: sans-serif;
+            margin: 10px 0;
+        }
+
+        .text-under {
+            font-size: 14px;
+        }
+
+        .prefooter {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: rgb(182, 180, 180);
+            font-family: sans-serif;
+            font-size: 14px;
+            background-color: rgb(41, 41, 41);
+        }
+
+        footer {
+            height: 100px;
+            line-height: 120px;
+            text-align: center;
+            color: rgb(182, 180, 180);
+            font-family: sans-serif;
+            font-size: 14px;
+            background-color: black;
+        }
+
+        /* at-rule @media - це правило, за допомогою якого при зміні гаджета/розміру екрана міняється вигляд
+        сайту на більш читабельний  */
+        /* я почала із 1240px та поступово зменшуючи екран відібрала точки, де якісь елементи почали виступати 
+        та заважати адаптивності сайту*/
+        @media screen and (max-width: 1240px) {
+            nav {
+                margin-top: 10px;
+            }
+
+            .style-travel {
+                font-size: 30px;
+            }
+
+            .child {
+                width: 400px;
+                font-size: 12px;
+            }
+
+            .border-take {
+                font-size: 12px;
+                padding: 5px;
+                border-radius: 14px;
+                margin: 5px 0px;
+            }
+
+            .center-text {
+                margin-top: 150px;
+            }
+
+            .text-1 {
+                font-size: 24px;
+            }
+
+            .text-2 {
+                font-size: 44px;
+                letter-spacing: 4px;
+            }
+
+            .text-3 {
+                font-size: 18px;
+                width: 150px;
+                height: 28px;
+                line-height: 28px;
+            }
+
+            section {
+                width: 100%;
+            }
+
+            .section-experience {
+                width: 650px;
+            }
+
+            .header-experience {
+                font-size: 28px;
+            }
+
+            .change-screen {
+                font-size: 20px;
+            }
+
+            img {
+                width: 480px;
+            }
+
+            .column {
+                width: 1000px;
+            }
+
+            .width-div {
+                width: 480px;
+            }
+
+            .header-column {
+                font-size: 24px;
+            }
+
+            .text-under {
+                font-size: 22px;
+            }
+
+            .prefooter {
+                font-size: 18px;
+            }
+
+            footer {
+                font-size: 18px;
+            }
+
+        }
+
+        /* у загальному я просто змінювала розміри тексту, елементів */
+
+        @media screen and (max-width: 1000px) {
+            nav {
+                display: block;
+            }
+
+            .style-travel {
+                font-size: 50px;
+            }
+
+            .child {
+                width: 600px;
+                font-size: 16px;
+            }
+
+            .border-take {
+                font-size: 16px;
+                padding: 10px;
+                margin: 5px 0px;
+            }
+
+            .text-1 {
+                font-size: 28px;
+            }
+
+            .text-2 {
+                font-size: 46px;
+                letter-spacing: 4px;
+            }
+
+            .text-3 {
+                font-size: 20px;
+                width: 160px;
+                height: 30px;
+                line-height: 30px;
+            }
+
+            section {
+                margin-bottom: 50px;
+            }
+
+            .section-experience {
+                width: 100%;
+            }
+
+            .header-experience {
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .change-screen {
+                font-size: 22px;
+            }
+
+            img {
+                width: 600px;
+            }
+
+            .column {
+                display: block;
+                width: 100%;
+            }
+
+            .width-div {
+                width: 600px;
+            }
+
+            .header-column {
+                font-size: 28px;
+            }
+
+            .text-under {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .prefooter {
+                font-size: 18px;
+            }
+
+            footer {
+                font-size: 20px;
+                line-height: 100px;
+            }
+
+        }
+
+        /* далі я також майже тільки змінювала розміри елементів та тексту, але ще я змінила display, аби змінити розміщення елементів */
+
+        @media screen and (max-width: 600px) {
+            .style-travel {
+                font-size: 70px;
+                text-align: center;
+            }
+
+            .child {
+                width: 100%;
+                font-size: 14px;
+            }
+
+            .change-screen {
+                font-size: 22px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .column {
+                display: block;
+                width: 100%;
+            }
+
+            .width-div {
+                width: 100%;
+            }
+
+            .header-column {
+                font-size: 28px;
+            }
+
+            .text-under {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .prefooter {
+                font-size: 18px;
+            }
+
+            footer {
+                font-size: 20px;
+                line-height: 100px;
+            }
+        }
+        /* змінювала тільки розміри тексту/ елементів, ну і відступів */
+
+        @media screen and (max-width: 450px) {
+
+            .style-travel {
+                font-size: 30px;
+            }
+
+            .child {
+                display: block;
+                width: 100%;
+            }
+
+            .border-take {
+                border: 0px;
+                padding: 0;
+                margin: 0;
+            }
+
+            .center-text {
+                margin-top: 160px;
+            }
+
+            .text-1 {
+                font-size: 24px;
+            }
+
+            .text-2 {
+                font-size: 34px;
+                letter-spacing: 4px;
+            }
+
+            .text-3 {
+                font-size: 18px;
+                width: 150px;
+                height: 28px;
+                line-height: 28px;
+            }
+
+            .header-experience {
+                font-size: 24px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .width-div {
+                width: 100%;
+            }
+
+            .header-column {
+                font-size: 24px;
+            }
+
+            .text-under {
+                font-size: 24px;
+            }
+
+            .prefooter {
+                font-size: 14px;
+            }
+
+            footer {
+                font-size: 16px;
+                line-height: 100px;
+            }
+        }
+        /* також змінювала розміри та розміщення елементів */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="background-image">
+            <nav>
+                <div>
+                    <div class="style-travel">Travel Portal</div>
+                </div>
+                <div>
+                    <div class="child">
+                        <p>HOME</p>
+                        <p>DESTINATIONS</p>
+                        <p>EXPERIENCES</p>
+                        <p>EVENTS</p>
+                        <p class="border-take">TAKE ACTION</p>
+                    </div>
+                </div>
+            </nav>
+            <!-- навігаційні елементи -->
+            <center>
+                <div class="center-text">
+                    <div class="text-1 margin">We are all together</div>
+                    <div class="text-2 margin"><strong>WE ARE EUROPE</strong></div>
+                    <div class="text-3">WATCH NOW</div>
+                </div>
+            </center>
+        </div>
+    </header>
+    <!-- елемент заголовку (початок сайту) -->
+    <center>
+        <section>
+            <div class="section-experience">
+                <p class="header-experience">Experience Europe through our stories</p>
+                <p class="change-screen">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius cumque totam
+                    deleniti dolores
+                    rerum,
+                    facere impedit repudiandae atque quibusdam reprehenderit inventore consequatur placeat labore
+                    nobis,
+                    blanditiis vel beatae soluta nesciunt. Accusantium perferendis quidem voluptates sed provident
+                    autem
+                    reprehenderit quasi, magnam, adipisci facilis harum fugit in ipsum excepturi dignissimos?
+                    Tempora,
+                    iusto?</p>
+            </div>
+            <div class="column">
+                <div class="width-div">
+                    <img src="images/photo-1.jpg" alt="">
+                    <div class="header-column">ABOUT</div>
+                    <div class="text-under">Lorem ipsum dolor sit Lorem ipsum dolor sit. amet consectetur adipisicing
+                        elit. Sed voluptatibus
+                        minima modi blanditiis.</div>
+                </div>
+                <div class="width-div">
+                    <img src="images/photo-7.jpg" alt="">
+                    <div class="header-column">TAKE ACTION</div>
+                    <div class="text-under">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, animi!</div>
+                </div>
+            </div>
+        </section>
+        <!-- окремий розділ сайту -->
+    </center>
+    <div class="prefooter">WANT TO KNOW MORE ABOUT EUROPE?</div>
+    <!-- майже 'підвал' -->
+    <footer>2021 ~ Lidiia Zhbadynska ~</footer>
+    <!-- підвал -->
+
+</body>
+
+</html>

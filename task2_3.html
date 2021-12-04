@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 2.3.</title>
+    <style>
+        .first_div {
+            background-color: violet;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+        }
+
+        .second_div {
+            background-color: rgb(235, 182, 235);
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+        }
+
+        .third_div {
+            background-color: rgb(228, 204, 228);
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+        }
+
+        /* задала різні кольори до блоків*/
+
+        center+p {
+            font-size: 22px;
+        }
+
+        /* застилізувала елемент <p>, що йде після тегу center, а саме: задала розмір тексту */
+
+        .relative {
+            position: relative;
+            left: 200px;
+        }
+
+        .relative2 {
+            position: relative;
+            bottom: 200px;
+            left: 400px;
+        }
+
+        .relative3 {
+            position: relative;
+            bottom: 400px;
+        }
+
+        /* задала елементу position: relative, що означає відносне позиціонування і за допомогою 
+        координатів css (top, left..) розмістила елементи як на прикладі*/
+    </style>
+</head>
+
+<body>
+    <hr>
+    <a href="index.html">Я</a> <br>
+    <a href="second.html">Кейсі</a> <br>
+    <a href="third.html">Котики</a> <br>
+    <a href="fourth.html">Завдання 2</a> <br>
+    <a href="contacts.html">Контакти</a> <br>
+    <a href="task2.html">Завдання 2.1.</a>
+    <a href="task2_2.html">Завдання 2.2.</a>
+    <a style="color: crimson; font-size: 28px;" href="task2_3.html">Завдання 2.3.</a>
+    <a href="task2_4.html">Завдання 2.4.</a>
+    <a href="task2_5.html">Завдання 2.5.</a>
+    <hr>
+    <div class="relative">
+        <div class="first_div">
+            <center>
+                <p>1</p>
+            </center>
+            <!-- розташувала елемент p по центру блоку div -->
+            <p><strong>I am <br> Lidiia.</strong> </p>
+            <!-- за допомогою strong задала жирність тексту та br розмістила наступний текст з нового рядка -->
+            <p>I love studing</p>
+        </div>
+    </div>
+    <div class="relative2">
+        <div class="second_div">
+            <center>
+                <p>2</p>
+            </center>
+            <!-- розташувала елемент p по центру блоку div -->
+        </div>
+    </div>
+    <div class="relative3">
+        <div class="third_div">
+            <center>
+                <p>3</p>
+            </center>
+            <!-- розташувала елемент p по центру блоку div -->
+        </div>
+    </div>
+
+
+</body>
+
+</html>

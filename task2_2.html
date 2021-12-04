@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 2.2.</title>
+    <style>
+        .first_div {
+            background-color: violet;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border: 10px solid black;
+            /* додала до першого блоку границю */
+        }
+
+        .second_div {
+            background-color: rgb(235, 182, 235);
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border: 20px solid black;
+            /* додала до другого блоку границю */
+        }
+
+        .third_div {
+            background-color: rgb(228, 204, 228);
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border: 10px solid black;
+            /* додала до третього блоку границю */
+        }
+
+        /* задала різні кольори до блоків*/
+
+        center+p {
+            font-size: 22px;
+        }
+
+        /* застилізувала елемент <p>, що йде після тегу center, а саме: задала розмір тексту */
+
+        .flex {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        /* задала елементу display: flex, що буде поводитись як блочний елемент, але будуть доступні flex стилі */
+        /* за допомогою justify-content: flex-start розмістила елемент на початку сторінки */
+
+        .flex2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* задала елементу display: flex, що буде поводитись як блочний елемент, але будуть доступні flex стилі */
+        /* за допомогою justify-content: center розмістила елемент по центрі сторінки */
+
+        .flex3 {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        /* задала елементу display: flex, що буде поводитись як блочний елемент, але будуть доступні flex стилі */
+        /* за допомогою justify-content: flex-end розмістила елемент по центрі сторінки */
+
+        .size {
+            width: 600px;
+        }
+
+        /* розмір блоку, де будуть розміщені дочірні блоки(ті, що кольорові) */
+    </style>
+</head>
+
+<body>
+    <hr>
+    <a href="index.html">Я</a> <br>
+    <a href="second.html">Кейсі</a> <br>
+    <a href="third.html">Котики</a> <br>
+    <a href="fourth.html">Завдання 2</a> <br>
+    <a href="contacts.html">Контакти</a> <br>
+    <a href="task2.html">Завдання 2.1.</a>
+    <a style="color: crimson; font-size: 28px;" href="task2_2.html">Завдання 2.2.</a>
+    <a href="task2_3.html">Завдання 2.3.</a>
+    <a href="task2_4.html">Завдання 2.4.</a>
+    <a href="task2_5.html">Завдання 2.5.</a>
+    <hr>
+    <div class="size">
+        <!-- помістила усі div елементи в один суцільний блок (також типу div) щоб відтворити розміщення за прикладом -->
+        <div class="flex">
+            <!-- помістила елемент div class="first_div" в елемент div class="flex", 
+            щоб застилізувати розміщення дочірнього елемента -->
+            <div class="first_div">
+                <center>
+                    <p>1</p>
+                </center>
+                <!-- розташувала елемент p по центру блоку div -->
+                <p><strong>I am <br> Lidiia.</strong> </p>
+                <!-- за допомогою strong задала жирність тексту та br розмістила наступний текст з нового рядка -->
+                <p>I love studing</p>
+            </div>
+        </div>
+        <div class="flex2">
+            <!-- помістила елемент div class="second_div" в елемент div class="flex2", 
+            щоб застилізувати розміщення дочірнього елемента -->
+            <div class="second_div">
+                <center>
+                    <p>2</p>
+                </center>
+                <!-- розташувала елемент p по центру блоку div -->
+            </div>
+        </div>
+        <div class="flex3">
+            <!-- помістила елемент div class="third_div" в елемент div class="flex3", 
+            щоб застилізувати розміщення дочірнього елемента -->
+            <div class="third_div">
+                <center>
+                    <p>3</p>
+                </center>
+                <!-- розташувала елемент p по центру блоку div -->
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
