@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Персональна сторінка Лідії</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/Кейсі.jpg">
+    <!-- додала іконку перед заголовком сайту -->
     <style>
         /* стилізую тіло (body) сайту */
         body {
@@ -64,69 +66,130 @@
 </head>
 
 <body>
-    <hr style="border-color: darkcyan;">
+
+    <hr style="position: sticky; top: 2px; border-color: darkcyan;">
+    <!-- задала sticky позиціонування до горизонтальної лінії так, що коли ми прогортаємо сторінку 
+        сайту на цю горизонтальну лінії накладеться інша, до якої я також задала sticky позиціонування-->
     <!-- змінила колір лінії, не зважаючи, що уже задала колір у head сайту. 
         Колір все одно змінився, тому що inline CSS має вищий пріорітет, ніж Internal CSS -->
-    <a class="links" style="color: crimson; font-size: 28px;" href="index.html">Я</a> <br>
-    <!-- за допомогою inline CSS задала стилю, а саме: змінила колір та розмір тексту у тезі <a> -->
-    <a class="links" href="second.html">Кейсі</a> <br>
-    <a class="links" href="third.html">Котики</a> <br>
-    <a class="links" href="fourth.html">Завдання 2</a> <br>
-    <a class="links" href="contacts.html">Контакти</a> <br>
-    <hr>
-    <center>
-        <h1 id="italic">Персональна сторінка</h1>
-    </center>
-    <img width="200px" height="270px" src="images/My_photo.jpg" alt="">
-    <h2>Прізвище, ім'я, по-батькові:</h2>
-    <p>Жбадинська Лідія Русланівна</p>
-    <h2>Вік:</h2>
-    <p>18 років</p>
-    <h2>Контактна інформація:</h2>
-    <h3>Email:</h3>
-    <p>6887952@stud.nau.edu.ua</p>
-    <h3>Номер телефону:</h3>
-    <p>+38098*****77</p>
-    <h2>Освіта:</h2>
-    <p> <strong>Університет: </strong>Національний авіаційний університет <br> <strong>Спеціальність:
-        </strong>125
-        Кібербезпека
-        <br> <strong>Освітня програма: </strong> БІКС <br> <strong>Курс: </strong>2 (бакалавр)
-    </p>
-    <h2>Чим займаюся:</h2>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse modi quibusdam
-        iusto
-        minima. Nisi ad illo id
-        ratione laudantium eos accusantium totam, suscipit voluptatem, mollitia eligendi eum vero ipsum fuga
-        odit natus,
-        tenetur maiores veritatis aut vel cum in. Non facilis consequatur officiis facere saepe et quasi rem
-        sint odio
-        voluptates omnis laborum quisquam dolorem nemo impedit, at aut doloremque veniam quidem, amet animi
-        veritatis
-        nihil. Voluptatibus nesciunt ex quasi! Nostrum, reiciendis voluptatibus. <br> Neque, nemo. At quisquam
-        repudiandae et
-        cupiditate enim quo consectetur hic minima ipsa pariatur aliquam unde ut possimus perferendis officiis
-        inventore
-        sunt, quod corporis culpa iste! Labore recusandae fugit eligendi soluta exercitationem libero
-        praesentium nulla
-        natus, quia laborum facilis sapiente perspiciatis illo nisi doloremque quisquam accusamus qui maxime hic
-        commodi
-        ea. Praesentium illum quam eaque ullam omnis autem perferendis cupiditate molestiae doloremque totam,
-        nemo
-        repellat quisquam deleniti recusandae, amet sequi. Eligendi, sit? Quo nostrum quaerat hic dicta?</p>
-    <h3>Улюблені книги:</h3>
-    <ol>
-        <li>"Про море мені розкажи" Ельчін Сафарлі</li>
-        <li>"Трансерфінг реальності" Вадим Зеланд</li>
-        <li>"Фірма" Джон Ґрішем</li>
-        <li>"П’ять четвертинок апельсина" Джоан Гаррис</li>
-    </ol>
-    <h3>Домашні улюбленці:</h3>
-    <ul style="list-style-type: '♥ ';">
-        <!-- list-style-type змінює стиль маркування списку -->
-        <li>Собака</li>
-        <li>Котики</li>
-    </ul>
+    <nav style="position: sticky; top: 15px;">
+        <!-- для навігаційного тегу також задала sticky позиціонування із фіксацією на 15-ому пікселі згори -->
+        <a class="links" style="color: crimson; font-size: 28px;" href="index.html">Я</a> <br>
+        <!-- за допомогою inline CSS задала стилю, а саме: змінила колір та розмір тексту у тезі <a> -->
+        <a class="links" href="second.html">Кейсі</a> <br>
+        <a class="links" href="third.html">Котики</a> <br>
+        <a class="links" href="fourth.html">Завдання 2</a> <br>
+        <a class="links" href="contacts.html">Контакти</a> <br>
+        <a class="links" href="task2.html">Завдання 2.1.</a> <br>
+        <a class="links" href="responsive-flex.html">Responsive-flex</a> <br>
+        <a class="links" href="parallax.html">Parallax</a>
+    </nav>
+    <!-- помістила теги <a> у <nav>, тому що елемент nav являє собою розділ сторінки, який посилається на 
+        інші сторінки або частини сторінки: розділ із посиланнями навігації. -->
+    <!-- </div> -->
+    <hr style="position: sticky; top: 2px;">
+
+
+    <header>
+        <center>
+            <h1>Персональна сторінка</h1>
+            <!-- помістила теги <h1> у <header>, тому що елемент заголовка являє собою вступний вміст 
+            для його найближчого предка, розділяючи вміст або кореневий елемент розділення. -->
+        </center>
+    </header>
+
+    <!-- Помістила елементи з розділами до тегу section, тому що цей елемент представляє загальний розділ документа або програми. 
+        Розділ, у цьому контексті, є тематичним групуванням вмісту. Кожен розділ слід ідентифікувати, як правило, шляхом включення 
+        заголовка (елемент h1-h6) як дочірнього елемента розділу.  -->
+    <section>
+        <div>
+            <img width="200px" height="270px" style="display: inline-block; " src="images/My_photo.jpg" alt="">
+            <h2 style="display: inline-block; margin-right: 20px; margin-left: 15px;">Прізвище, ім'я, по-батькові:</h2>
+            <p style="display: inline-block;">Жбадинська Лідія Русланівна</p>
+            <!-- за допомогою новиx вивчених стилів css, а саме: display: inline-block розмістила елементи 
+            в один ряд, зробивши їх блочними -->
+        </div>
+        <!-- помістила декілька елементів в <div>, щоб продемонструвати цей новий елемент -->
+    </section>
+    <!-- розділ -->
+    <section>
+        <h2 style="display: inline-block;">Вік:</h2>
+        <p style="display: inline-block;">18 років</p>
+    </section>
+    <!-- розділ -->
+    <section>
+        <center>
+            <h2>Контактна інформація:</h2>
+        </center>
+        <div style="display: flex; justify-content: space-around;">
+            <!-- до батьківського елементу додала display: flex та стилі flex, щоб елементи поводилися як блочний елемент і 
+                викладали свій вміст відповідно до моделі flexbox, у моєму випадку я задала стиль justify-content: space-around 
+            за допомогою якого я розмістила елементи на однакові відступи як від боків сторінки, так і між самими елеметами-->
+            <div>
+                <h3>Email:</h3>
+                <p>6887952@stud.nau.edu.ua</p>
+            </div>
+            <!-- помістила елементи <h3> та <p> в елемент div, щоб переміщати їх як блочні 
+                елементи, при тому, що вони триматимуться в купі
+            Також, тим самим я зробила ці два <div> дочірніми до іншого <div>(що містить у стилі display: flex)-->
+            <div>
+                <h3>Номер телефону:</h3>
+                <p>+38098*****77</p>
+            </div>
+        </div>
+    </section>
+    <!-- розділ -->
+    <section>
+        <h2>Освіта:</h2>
+        <p> <strong>Університет: </strong>Національний авіаційний університет <br> <strong>Спеціальність:
+            </strong>125
+            Кібербезпека
+            <br> <strong>Освітня програма: </strong> БІКС <br> <strong>Курс: </strong>2 (бакалавр)
+        </p>
+    </section>
+    <!-- розділ -->
+    <section>
+        <h2>Чим займаюся:</h2>
+        <p style="box-sizing: border-box; padding-right: 200px; padding-left: 5px; border-left: 10px double pink;">
+            <!-- задала внутрішній відступ, а саме зліва та справа навколо тексту, та ліву границю зі стилем double -->
+            <!-- також задала box-sizing: border-box, що наказує браузеру враховувати будь-які межі та відступи у значеннях,
+                 які я вказала для ширини та висоти елемента. -->
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse modi quibusdam
+            iusto
+            minima. Nisi ad illo id
+            ratione laudantium eos accusantium totam, suscipit voluptatem, mollitia eligendi eum vero ipsum fuga
+            odit natus,
+            tenetur maiores veritatis aut vel cum in. Non facilis consequatur officiis facere saepe et quasi rem
+            sint odio
+            voluptates omnis laborum quisquam dolorem nemo impedit, at aut doloremque veniam quidem, amet animi
+            veritatis
+            nihil. Voluptatibus nesciunt ex quasi! Nostrum, reiciendis voluptatibus. <br> Neque, nemo. At quisquam
+            repudiandae et
+            cupiditate enim quo consectetur hic minima ipsa pariatur aliquam unde ut possimus perferendis officiis
+            inventore
+            sunt, quod corporis culpa iste! Labore recusandae fugit eligendi soluta exercitationem libero
+            praesentium nulla
+            natus, quia laborum facilis sapiente perspiciatis illo nisi doloremque quisquam accusamus qui maxime hic
+            commodi
+            ea. Praesentium illum quam eaque ullam omnis autem perferendis cupiditate molestiae doloremque totam,
+            nemo
+            repellat quisquam deleniti recusandae, amet sequi. Eligendi, sit? Quo nostrum quaerat hic dicta?
+        </p>
+        <h3>Улюблені книги:</h3>
+        <ol>
+            <li>"Про море мені розкажи" Ельчін Сафарлі</li>
+            <li>"Трансерфінг реальності" Вадим Зеланд</li>
+            <li>"Фірма" Джон Ґрішем</li>
+            <li>"П’ять четвертинок апельсина" Джоан Гаррис</li>
+        </ol>
+        <h3>Домашні улюбленці:</h3>
+        <ul style="list-style-type: '♥ ';">
+            <!-- list-style-type змінює стиль маркування списку -->
+            <li>Собака</li>
+            <li>Котики</li>
+        </ul>
+    </section>
+    <!-- розділ -->
     <hr style="border-color: darkcyan;">
     <!-- також змінила колір лінії -->
 </body>
