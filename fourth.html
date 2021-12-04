@@ -20,18 +20,23 @@
 <body>
     <hr style="border-color: darkcyan;" size="15">
     <!-- змінила колір та розмір лінії -->
-    <a class="links" href="index.html">Я</a> <br>
-    <a class="links" href="second.html">Кейсі</a> <br>
-    <a class="links" href="third.html">Котики</a> <br>
-    <a class="links" style="color: crimson; font-size: 28px;" href="fourth.html">Завдання 2</a> <br>
-    <!-- за допомогою inline CSS задала стилю, а саме: змінила колір та розмір тексту у тезі <a> -->
-    <a class="links" href="contacts.html">Контакти</a> <br>
+    <nav>
+        <a class="links" href="index.html">Я</a> <br>
+        <a class="links" href="second.html">Кейсі</a> <br>
+        <a class="links" href="third.html">Котики</a> <br>
+        <a class="links" style="color: crimson; font-size: 28px;" href="fourth.html">Завдання 2</a> <br>
+        <!-- за допомогою inline CSS задала стилю, а саме: змінила колір та розмір тексту у тезі <a> -->
+        <a class="links" href="contacts.html">Контакти</a> <br>
+        <a class="links" href="task2.html">Завдання 2.1.</a>
+    </nav>
+    <!-- помістила теги <a> у <nav>, тому що елемент nav являє собою розділ сторінки, який посилається на 
+        інші сторінки або частини сторінки: розділ із посиланнями навігації. -->
     <hr size="15">
     <table width="100%" height="100%" cellpadding="5" cellspacing="10">
         <tr>
             <td height="150px" width="120px"><img src="images/Котики.jpg" height="150px" width="120px" alt=""></td>
             <td>
-                <center style="font-weight: 600; font-size: 18px;"> Фотографія котиків </center> 
+                <center style="font-weight: 600; font-size: 18px;"> Фотографія котиків </center>
                 <!-- задала жирності та змінила розмір окремого фрагменту тексту -->
                 Lorem ipsum dolor sit
                 amet consectetur adipisicing elit. Repudiandae
@@ -148,8 +153,9 @@
         </tr>
     </table>
     <table style="margin-top: -350px;" width="100%" height="100%" border="0" cellpadding="5" cellspacing="10">
-        <!-- Так як я приховала попередню таюлицю, то утворилось пусте місце розміром таблиці, яка була до цього.
+        <!-- Так як я приховала попередню таблицю, то утворилось пусте місце розміром таблиці, яка була до цього.
         Для цього я скористалась властивістю марджіну та 'піднесла' дану таблицю на 350 пікселів вверх -->
+        <!-- проте можна було скористатись display: none, тоді не прийшлось використовувати margin-top, тим більше у мінусовому значенню -->
         <tr>
             <td width="50%">
                 <center> Сайт створила Жбадинська Лідія Русланівна</center>
