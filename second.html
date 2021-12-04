@@ -30,41 +30,70 @@
 <body>
     <hr style="border-color: darkcyan;" size="15">
     <!-- змінила колір лінії -->
-    <a class="links" href="index.html">Я</a> <br>
-    <a class="links" style="color: crimson; font-size: 28px;" href="second.html">Кейсі</a> <br>
-    <!-- за допомогою inline CSS задала стилю, а саме: змінила колір та розмір тексту у тезі <a> -->
-    <a class="links" href="third.html">Котики</a> <br>
-    <a class="links" href="fourth.html">Завдання 2</a> <br>
-    <a class="links" href="contacts.html">Контакти</a> <br>
-
+    <nav>
+        <a class="links" href="index.html">Я</a> <br>
+        <a class="links" style="color: crimson; font-size: 28px;" href="second.html">Кейсі</a> <br>
+        <!-- за допомогою inline CSS задала стилю, а саме: змінила колір та розмір тексту у тезі <a> -->
+        <a class="links" href="third.html">Котики</a> <br>
+        <a class="links" href="fourth.html">Завдання 2</a> <br>
+        <a class="links" href="contacts.html">Контакти</a> <br>
+        <a class="links" href="task2.html">Завдання 2.1.</a>
+    </nav>
+    <!-- помістила теги <a> у <nav>, тому що елемент nav являє собою розділ сторінки, який посилається на 
+        інші сторінки або частини сторінки: розділ із посиланнями навігації. -->
     <hr size="15">
-    <center>
-        <h1>Персональна сторінка</h1>
-    </center>
-    <img style="float: left; margin-right: 40px;" width="200px" height="250px" src="images/Кейсі.jpg" alt="">
-    <!-- за допомогою float розмістила фото зліва та margin-right зробила відступ справа від фото-->
-    <h2>Ім'я:</h2>
-    <p>Кейсі ♥</p>
-    <h2>Вік:</h2>
-    <p>7 рочків ♥</p>
-    <h2>Дата народження:</h2>
-    <p>06.05.2014р. ♥</p>
-    <h2>Порода:</h2>
-    <p>Англійський кокер-спанієль ♥</p>
-    <h2>Чим любить займатися:</h2>
-    <p>Гуляти, бігати за пташками, їсти та спати ♥</p>
-    <h2>Дитячі фотографії:</h2>
-    <center>
-        <img style="margin-right: 35px;" src="images/Кейсі мацьопа.jpg" width="170px" height="170px" alt="">
-        <!-- задала відступ вправо на 35px після фото -->
-        <img style="margin-right: 35px;" src="images/Кейсі мацьопа 2.jpg" width="170px" height="170px" alt="">
-        <!-- задала відступ вправо на 35px після фото -->
-        <img style="margin-right: 35px;" src="images/Кейсі мацьопа 3.jpg" width="170px" height="170px" alt="">
-        <!-- задала відступ вправо на 35px після фото -->
-        <img style="margin-right: 35px;" src="images/Кейсі мацьопа 4.jpg" width="170px" height="170px" alt="">
-        <!-- задала відступ вправо на 35px після фото -->
-        <img src="images/Кейсі мацьопа 5.jpg" width="170px" height="170px" alt="">
-    </center>
+    <header>
+        <center>
+            <h1>Персональна сторінка</h1>
+            <!-- помістила теги <h1> у <header>, тому що елемент заголовка являє собою вступний вміст 
+            для його найближчого предка, розділяючи вміст або кореневий елемент розділення. -->
+        </center>
+    </header>
+    <section>
+        <img style="float: left; margin-right: 40px;" width="200px" height="250px" src="images/Кейсі.jpg" alt="">
+        <!-- за допомогою float розмістила фото зліва та margin-right зробила відступ справа від фото-->
+        <h2>Ім'я:</h2>
+        <p>Кейсі ♥</p>
+    </section>
+    <section>
+        <h2>Вік:</h2>
+        <p>7 рочків ♥</p>
+    </section>
+    <section>
+        <h2>Дата народження:</h2>
+        <p>06.05.2014р. ♥</p>
+    </section>
+    <section>
+        <h2>Порода:</h2>
+        <p>Англійський кокер-спанієль ♥</p>
+    </section>
+    <section>
+        <h2>Чим любить займатися:</h2>
+        <p>Гуляти, бігати за пташками, їсти та спати ♥</p>
+    </section>
+    <footer>
+        <h2>Дитячі фотографії:</h2>
+        <center>
+            <img style="margin-right: 35px;" src="images/Кейсі мацьопа.jpg" width="170px" height="170px" alt="">
+            <!-- задала відступ вправо на 35px після фото -->
+            <img style="margin-right: 35px;" src="images/Кейсі мацьопа 2.jpg" width="170px" height="170px" alt="">
+            <!-- задала відступ вправо на 35px після фото -->
+            <img style="margin-right: 35px;" src="images/Кейсі мацьопа 3.jpg" width="170px" height="170px" alt="">
+            <!-- задала відступ вправо на 35px після фото -->
+            <img style="margin-right: 35px;" src="images/Кейсі мацьопа 4.jpg" width="170px" height="170px" alt="">
+            <!-- задала відступ вправо на 35px після фото -->
+            <img src="images/Кейсі мацьопа 5.jpg" width="170px" height="170px" alt="">
+        </center>
+    </footer>
+    <!-- помістила дитячі фото у footer, тобто в елемент нижнього колонтитула, що представляє нижній колонтитул для його 
+        найближчого предка розділяючого вмісту або розділяючого кореневого елемента. Нижній колонтитул зазвичай містить 
+        інформацію про свій розділ, наприклад, хто його написав, посилання на пов’язані документи, дані про авторські права тощо, а в моєму 
+        випадку - це просто фото-->
+
+
+
+
+
     <hr style="border-color: darkcyan;">
     <!-- змінила колір лінії -->
 </body>
